@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+/* font-family: 'Inter', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap');
+/* font-family: 'Rubik', sans-serif; */
+
+
+@font-face {
+    font-family: 'NeueRegular';
+    src: url(./fonts/NeueMachina-Regular.otf);
+}
+
+@font-face {
+    font-family: 'NeueBold';
+    src: url(./fonts/NeueMachina-Ultrabold.otf);
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url(./fonts/AvenirLTStd-Black.otf);
+}

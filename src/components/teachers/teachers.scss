@@ -1,0 +1,234 @@
+.teach {
+    display: block;
+    transition: var(--transition);
+    cursor: pointer;
+    width: 892px;
+    max-width: 100%;
+    &:hover {
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.6);
+    }
+    &-ers {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    &-box {
+        width: 100%;
+        display: flex;
+        border: 1px solid #ffffff;
+    }
+    img {
+        display: block;
+        width: 278px;
+    }
+    &-des {
+        width: 100%;
+        padding: 40px 30px;
+        background: var(--bg-red-linear);
+        * {
+            color: #ffffff;
+        }
+    }
+    &-user {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 59px;
+        margin-bottom: 30px;
+        font-family: "Montserrat", sans-serif;
+        &-about {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            li {
+                font-family: "Montserrat", sans-serif;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 29px;
+                span {
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+    &-idea {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: -0.02em;
+        margin-bottom: 20px;
+        font-family: "Montserrat", sans-serif;
+    }
+}
+
+.slick {
+    &-slide {
+        & > div > div {
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+        }
+        .teach {
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+        }
+    }
+
+    &-next {
+        right: 100px !important;
+    }
+    &-prev {
+        left: 100px !important;
+    }
+    &-arrow {
+        width: 90px;
+        height: 90px;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        background: #ffffff;
+        opacity: 0.4;
+        filter: blur(2px);
+        border-radius: 50%;
+        z-index: 9;
+        &::before,
+        &::after {
+            color: var(--text-blue);
+            font-size: 60px;
+            opacity: 1;
+            display: block;
+            margin-top: 8px;
+        }
+    }
+    &-dots {
+        li {
+            width: 10px !important;
+            height: 10px !important;
+            border-radius: 50% !important;
+            background: var(--bg-red-linear) !important;
+            margin: 0 10px;
+            transition: var(--transition);
+            button {
+                &::before {
+                    display: none !important;
+                }
+            }
+            &.slick-active {
+                width: 100px !important;
+                height: 10px !important;
+                border-radius: 10px !important;
+                transition: var(--transition);
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .slick {
+        &-arrow {
+            width: 60px !important;
+            height: 60px !important;
+            &::before {
+                font-size: 40px !important;
+                margin-top: 8px;
+            }
+        }
+        &-next {
+            right: 30px !important;
+        }
+        &-prev {
+            left: 30px !important;
+        }
+    }
+    .teach {
+        img {
+            width: 200px;
+        }
+        &-des {
+            padding: 20px 15px;
+        }
+        &-user {
+            font-weight: 600;
+            font-size: 42px;
+            line-height: 45px;
+            margin-bottom: 20px;
+            &-about {
+                li {
+                    font-weight: 500;
+                    font-size: 22px;
+                    line-height: 25px;
+                    span {
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+        &-idea {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 20px;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .teach {
+        &-box {
+            flex-direction: column;
+            img {
+                width: 100%;
+            }
+        }
+        &ers {
+            .slick {
+                &-slide {
+                    padding: 0 20px !important;
+                    .teach-box {
+                        filter: blur(10px);
+                        vertical-align: middle !important;
+                    }
+                    &.slick-active {
+                        .teach-box {
+                            filter: blur(0) !important;
+                        }
+                    }
+                    vertical-align: middle !important;
+                }
+                &-track {
+                    vertical-align: middle !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .teach {
+        &-idea {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 20px;
+            letter-spacing: -0.02em;
+            margin-bottom: 15px;
+        }
+        &-user {
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 35px;
+            margin-bottom: 20px;
+            &-about {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                li {
+                    font-size: 18px;
+                    line-height: 20px;
+                    font-weight: 500;
+                    span {
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+}

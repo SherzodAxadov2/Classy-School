@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+  scroll-behavior: smooth;
+  font-family: 'Avenir';
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  box-sizing: border-box;
+  /* overflow-x: hidden !important; */
+}
+
+.app {
+  width: 100%;
+  max-width: 100%;
+}
+
+:root {
+  --text-blue: #064088;
+  --text-green: #009933;
+  --text-yellow: #FFE600;
+  --bg-red: linear-gradient(180deg, #C03131 0.68%, #BF3230 26.85%, #A8091D 82.34%, #BB222D 99.2%);
+  --bg-red-linear-first: linear-gradient(135deg, #FF2037 11.98%, #6C0032 100%);
+  ;
+  --bg-red-linear: linear-gradient(90deg, #6C0032 23.93%, #FF2037 100%);
+  --text-red: #D31D1D;
+  --text-red-light: #FF0303;
+  --bg-blue-top: radial-gradient(96.88% 96.88% at 50% 96.88%, #FFFFFF 24.31%, #74A8F7 100%);
+  --bg-blue-bottom: radial-gradient(92.66% 92.66% at 50% 0%, #FFFFFF 26.08%, #74A8F7 100%);
+  --transition: all .25s;
+}
+
+.text-linear {
+  background: linear-gradient(90deg, #064088 1.65%, #0072FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.container {
+  width: 1200px;
+  max-width: 100%;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+button, input, select, textarea {
+  outline: none;
+  border: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.top {
+  background: var(--bg-blue-top);
+  width: 100%;
+}
+
+.bottom {
+  background: var(--bg-blue-bottom);
+  width: 100%;
+}
+
+.home-swipe {
+  width: 100%;
+}
+
+#root {
+  overflow-x: hidden;
+}
